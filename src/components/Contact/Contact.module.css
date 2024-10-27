@@ -1,4 +1,6 @@
 .listitem {
+    display: flex;
+    flex-wrap: wrap;
      border: 2px solid #e7a61a;
     background-color: #BCC5FF;
     max-width: 100px;
@@ -12,6 +14,7 @@ padding: 20px;
     color: black;
     font-size: 20px;
     font-weight: 600;
+    
 }
 
 

@@ -8,7 +8,7 @@ function SearchBox() {
 
   const handleFilterChange = (e) => {
     dispatch(changeFilter(e.target.value));
-  }; // Closing brace added here
+  }; 
 
   return (
     <div className={css.wrapper}>

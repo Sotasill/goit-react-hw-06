@@ -1,6 +1,4 @@
-
-
-import "./App.module.css";
+import css from "./App.module.css";
 import ContactList from "../ContactList/ContactList";
 import ContactForm from "../ContactForm/ContactForm";
 import SearchBox from "../SearchBox/SearchBox";
@@ -12,12 +10,12 @@ function App() {
   const contacts = useSelector(selectContacts);
   const filter = useSelector(selectNameFilter);
 
-  const visibleContacts = contacts.filter(contact =>
+  const visibleContacts = contacts.filter((contact) =>
     contact.name.toLowerCase().includes(filter.toLowerCase())
   );
 
   return (
-    <div>
+    <div className={css.mainWrapper}>
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
