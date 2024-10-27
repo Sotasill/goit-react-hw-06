@@ -15,9 +15,12 @@ function ContactList() {
   return (
     <ul className={css.contactBox}>
       {visibleContacts.map((contact) => (
-        <li key={contact.id} className={css.item}>
-          <Contact data={contact} />
-        </li>
+        <Contact
+          key={contact.id}
+          id={contact.id}
+          name={contact.name}
+          number={contact.number}
+        />
       ))}
     </ul>
   );
